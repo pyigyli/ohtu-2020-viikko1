@@ -56,7 +56,7 @@ public class VarastoTest {
     }
 
     @Test
-    public void ottaminenLis‰‰Tilaa() {
+    public void ottaminenLisaaTilaa() {
         varasto.lisaaVarastoon(8);
 
         varasto.otaVarastosta(2);
@@ -86,13 +86,13 @@ public class VarastoTest {
     }
 
     @Test
-    public void varastoonEiLis‰t‰NegatiivisiaMaaria() {
+    public void varastoonEiLisataNegatiivisiaMaaria() {
         varasto.lisaaVarastoon(-1);
         assertEquals(0, varasto.getSaldo(), vertailuTarkkuus);
     }
 
     @Test
-    public void varastoonEiLis‰t‰Liikaa() {
+    public void varastoonEiLisataLiikaa() {
         varasto.lisaaVarastoon(11);
         assertEquals(10, varasto.getSaldo(), vertailuTarkkuus);
     }
