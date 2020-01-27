@@ -108,8 +108,8 @@ public class VarastoTest {
 
     @Test
     public void otaVarastostaEiOtaLiikaa() {
-        Varasto v = new Varasto(10, 10);
-        v.otaVarastosta(11);
+        Varasto v = new Varasto(5, 5);
+        v.otaVarastosta(6);
         assertEquals(0, v.getSaldo(), vertailuTarkkuus);
     }
 }
