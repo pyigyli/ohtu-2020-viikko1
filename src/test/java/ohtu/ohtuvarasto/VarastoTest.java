@@ -119,6 +119,6 @@ public class VarastoTest {
     public void otaVarastostaEiOtaLiikaa() {
         Varasto v = new Varasto(10, 10);
         v.otaVarastosta(11);
-        assertEquals(0, v.getSaldo(), vertailuTarkkuus);
+        assertEquals(1, v.getSaldo(), vertailuTarkkuus);
     }
 }
